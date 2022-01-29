@@ -10,8 +10,6 @@ using namespace chrono;
 //Quelque soit un entier naturel n (pair), n est la somme de deux nombres premiers (n1 et n2).
 //PB: quelque soit n, afficher (stocker) toutes les pairs (n1, n2).
 
-//fonction qui reprend le crible d'eratosthène qui permet de faire un vecteur de nmbr premier
-
 void affichervect(vector<unsigned> tab){
     for(unsigned i = 0; i < tab.size(); ++i){
         cout << tab[i] << "    "    ;
