@@ -34,6 +34,8 @@ int main(){
     vector <unsigned> premier(nombre - 1); //vecteur de nombre premier
     premier[0] = 1;
     premier [1] = 1;
+
+    //CRIBLE
     unsigned index = 2;
     while(index < premier.size()){
         if (premier[index] != 1){//si le nombre n'est pas 1,
@@ -49,6 +51,7 @@ int main(){
 
     vector <unsigned> addition; //vecteur avec toute les additions
 
+    // ADDITION
     for(unsigned i = 0; i < (premier.size() / 2 + 3) ; ++i){
         unsigned val = nombre - i;
 
@@ -56,6 +59,7 @@ int main(){
             addition.push_back({val});
         }
     }
+
     high_resolution_clock::duration elapsed = high_resolution_clock::now()-start;
     cout << duration_cast<milliseconds>(elapsed).count() << " ms" << endl;
     affichierAddition(nombre, addition);
